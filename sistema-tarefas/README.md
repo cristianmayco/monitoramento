@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Tarefas
 
-Este diretório contém o projeto Spring Boot de exemplo utilizado para as demonstrações de monitoramento.
+Este diretório contém o projeto Spring Boot utilizado como exemplo para o sistema de monitoramento.
 
 Para construir e executar, utilize o Maven:
 
@@ -8,4 +8,5 @@ Para construir e executar, utilize o Maven:
 mvn spring-boot:run
 ```
 
+A aplicação possui endpoints REST para gerenciamento de tarefas e projetos.
 As dependências estão definidas no `pom.xml` fornecido na documentação.
