@@ -8,5 +8,5 @@ Para construir e executar, utilize o Maven:
 mvn spring-boot:run
 ```
 
-A aplicação possui endpoints REST para gerenciamento de tarefas e projetos.
+A aplicação possui endpoints REST para gerenciamento de usuários, tarefas e projetos.
 As dependências estão definidas no `pom.xml` fornecido na documentação.

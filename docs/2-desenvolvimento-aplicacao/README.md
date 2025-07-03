@@ -2,7 +2,7 @@
 
 Esta seção contém os recursos necessários para o desenvolvimento da aplicação web Java de exemplo que será monitorada.
 
-Atualmente o projeto possui uma implementação básica de CRUD para tarefas e projetos, servindo como ponto de partida para as próximas etapas.
+Atualmente o projeto possui uma implementação básica de CRUD para usuários, tarefas e projetos, servindo como ponto de partida para as próximas etapas.
 
 ## Estrutura
 
