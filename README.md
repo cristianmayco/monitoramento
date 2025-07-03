@@ -35,6 +35,18 @@ A documentação de planejamento do projeto está disponível na pasta [planejam
 
 Para iniciar o desenvolvimento do projeto, siga as instruções na pasta [1-preparacao-ambiente](./1-preparacao-ambiente).
 
+### Executando com Docker
+
+O ambiente completo de monitoramento pode ser iniciado via Docker Compose.
+Primeiro configure as variáveis de ambiente no arquivo `.env` e em seguida
+execute o script `start.sh`:
+
+```bash
+./start.sh
+```
+
+Para encerrar os serviços utilize `./stop.sh`.
+
 ## Licença
 
 Este projeto está licenciado sob a licença MIT.
