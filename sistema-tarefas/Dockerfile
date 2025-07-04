@@ -7,6 +7,7 @@ RUN mvn -B package -DskipTests
 
 # Runtime stage
 FROM eclipse-temurin:17-jre
+
 WORKDIR /app
 COPY --from=build /build/target/*.jar app.jar
 EXPOSE 8080

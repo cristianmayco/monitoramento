@@ -19,6 +19,9 @@ services:
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
     volumes:
       - es_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
     networks:
       - monitoring
 
@@ -37,6 +40,8 @@ services:
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
     depends_on:
       - elasticsearch
+    ports:
+      - "5601:5601"
     networks:
       - monitoring
 
@@ -44,6 +49,8 @@ services:
     image: prom/prometheus:v2.52.0
     volumes:
       - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
     networks:
       - monitoring
 
@@ -53,6 +60,8 @@ services:
       - grafana_data:/var/lib/grafana
     depends_on:
       - prometheus
+    ports:
+      - "3000:3000"
     networks:
       - monitoring
 
@@ -62,6 +71,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB}
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
     depends_on:
       - db
       - prometheus
