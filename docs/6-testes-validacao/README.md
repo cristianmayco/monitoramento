@@ -33,3 +33,13 @@ Esta seção contém os recursos necessários para testar e validar a aplicaçã
 - Spring Test
 - JMeter
 - Postman/Insomnia
+
+## Como Executar os Testes
+
+Dentro do diretório `sistema-tarefas` utilize o Maven para rodar todos os testes automatizados:
+
+```bash
+mvn test
+```
+
+Os testes incluem verificações de integração para os principais endpoints da aplicação.

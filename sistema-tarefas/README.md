@@ -10,3 +10,9 @@ mvn spring-boot:run
 
 A aplicação possui endpoints REST para gerenciamento de usuários, tarefas e projetos.
 As dependências estão definidas no `pom.xml` fornecido na documentação.
+
+Para executar os testes automatizados:
+
+```bash
+mvn test
+```
